@@ -1,6 +1,28 @@
 const express = require('express')
+const bodyParser = require('body-parser')
+const passport = require('passport')
+const flash = require('express-flash')
+const session = require('express-session')
+const initializePassport = require('./passport-config')
+initializePassport(
+    passport,
+    email => users.find(user => user.email === email)    
+)
 const app = express()
+
 const PORT = process.env.PORT || 5000
+
+// fake users
+const users = []
+
+// middleware
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended: true}))
+app.use(flash())
+app.use(session({
+    
+}))
+
 
 const configureApp = async () => {
     app.get('/', (req, res) => {
