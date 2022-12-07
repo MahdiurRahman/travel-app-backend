@@ -20,8 +20,8 @@
   "homepage": "https://github.com/MahdiurRahman/travel-app-backend#readme",
   "dependencies": {
     "bcrypt": "^3.0.6",
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
     "express-flash": "0.0.2",
     "express-session": "^1.16.2",
     "nodemon": "^1.19.2",
